@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F4B37E9C-F6C8-4D2C-A4B2-3D9AE2B02EF9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FarmaciaiFarme</RootNamespace>
+    <AssemblyName>FarmaciaiFarme</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="alterarmedicamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alterarmedicamentos.Designer.cs">
+      <DependentUpon>alterarmedicamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastrar Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastrar Clientes.Designer.cs">
+      <DependentUpon>Cadastrar Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\..\Desktop\Ilay\Farmacia\paineprincipaladm.cs">
+      <SubType>Form</SubType>
+      <Link>paineprincipaladm.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\Desktop\Ilay\Farmacia\paineprincipaladm.Designer.cs">
+      <DependentUpon>paineprincipaladm.cs</DependentUpon>
+      <Link>paineprincipaladm.Designer.cs</Link>
+    </Compile>
+    <Compile Include="Listar Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listar Clientes.Designer.cs">
+      <DependentUpon>Listar Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListarMedicameto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListarMedicameto.Designer.cs">
+      <DependentUpon>ListarMedicameto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listarusuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listarusuarios.Designer.cs">
+      <DependentUpon>Listarusuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pagina do Usúario %28Farmaceutico%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pagina do Usúario %28Farmaceutico%29.Designer.cs">
+      <DependentUpon>Pagina do Usúario %28Farmaceutico%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="relatoriodevendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="relatoriodevendas.Designer.cs">
+      <DependentUpon>relatoriodevendas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="venderprodutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="venderprodutos.Designer.cs">
+      <DependentUpon>venderprodutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="verificarvalidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="verificarvalidades.Designer.cs">
+      <DependentUpon>verificarvalidades.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="alterarmedicamentos.resx">
+      <DependentUpon>alterarmedicamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastrar Clientes.resx">
+      <DependentUpon>Cadastrar Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\Desktop\Ilay\Farmacia\paineprincipaladm.resx">
+      <DependentUpon>paineprincipaladm.cs</DependentUpon>
+      <Link>paineprincipaladm.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listar Clientes.resx">
+      <DependentUpon>Listar Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListarMedicameto.resx">
+      <DependentUpon>ListarMedicameto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listarusuarios.resx">
+      <DependentUpon>Listarusuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagina do Usúario %28Farmaceutico%29.resx">
+      <DependentUpon>Pagina do Usúario %28Farmaceutico%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="relatoriodevendas.resx">
+      <DependentUpon>relatoriodevendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="venderprodutos.resx">
+      <DependentUpon>venderprodutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="verificarvalidades.resx">
+      <DependentUpon>verificarvalidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
